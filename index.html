@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+    <title>James Lopresti</title>
+</head>
+<body>
+    <header>
+        <h1><strong>James Lopresti</strong></h1>
+        <p>Senior Computer Science Major at the University of Alabama in Huntsville</p>
+    </header>
+    <nav>
+        <ul class="nav-right">
+            <a onclick="toggleContactForm()">Contact</a>
+            <a href="https://discord.com/users/140635997439393803"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/jesti789"><i class="fa-brands fa-github"></i></a>
+        </ul>
+    </nav>
+    <img src="Media/profile.jpg" alt="Photo of James Lopresti" class="profile-img">
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a senior at the University of Alabama in Huntsville. I enjoy building things from software to cabinets. I have experience as a carpenter which has shaped my work-ethic and view on quality design.
+                I have had a passion for computers since I was 12 years old when I started writing small scripts and game mods. I know multiple programming languages and have implemented several types of applications.
+                I enjoy graphics programming and making games. I have made both 2D and 3D applications using frameworks, game engines, and directly with OpenGL. Outside of programming, I like to skateboard and build 
+                things in my garage. I am also an Eagle Scout.
+            </p>
+        </div>
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <p><strong>University of Alabama in Huntsville | Huntsville, AL</strong></p>
+                <li>Bachelor of Science in Computer Science, December 2025</li>
+                <li>Minor in Mathematics</li>
+                <p><strong>Calhoun Community College | Huntsville, AL</strong></p>
+                <li>Associate of Science, 2023</li>
+                <li>Concentration in Computer Science</li>
+
+                <p><strong>North Alabama Home Building Academy | Huntsville, AL</strong></p>
+                <li>Graduate, 2020</li>
+
+                <p><strong>Hazel Green High School | Hazel Green, AL</strong></p>
+                <li>Diploma, 2018</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <p><strong>Programming Languages</strong></p>
+                <li>C, C++, Java, Python, C#, ARM Assembly, Lua, JavaScript</li>
+
+                <p><strong>Software & Tools</strong></p>
+                <li>Visual Studio, VS Code, IntelliJ IDEA, Jupyter Notebook, Hadoop, Node.js, MongoDB, Unity, Blender, Microsoft Office</li>
+
+                <p><strong>Concepts & Methodologies</strong></p>
+                <li>Object-Oriented Programming, Data Structures & Algorithms, Basic Machine Learning Concepts, Version Control (Git), Agile/Scrum Fundamentals</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <p><strong>2D Platformer Video Game</strong> (Java, LibGDX)
+                <li>Designed sprites, implemented physics, and developed level progression inspired by classic platformers such as Mario</li>
+                <li>Gained experience in game mechanics, collision detection, and rendering.</li>
+                
+                <p><strong>3D Side-Scroller Video Game</strong> (Unity, C#)
+                <li>Created custom sound design and 3D models in Blender</li>
+                <li>Implemented gameplay logic, transitions, and animations.</li>
+                <li>Improved understanding of 3D game assets, lighting, and physics.</li>
+
+                <p><strong>Employee Time & Task Tracker</strong> (Web Application, Node.js)
+                <li>Built a desktop application that records punch-in/punch-out times and tasks</li>
+                <li>Developed a GUI visualizer to display time spent on various projects.</li>
+                <li>Strengthened skills in back-end logic, data handling, and user interface design.</li>
+            </ul>
+        </div>
+        <div class="contact-form" id="contactForm">
+            <h2>Contact Me</h2>
+            <form action="mailto:jameslopresti2@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+            <button onclick="toggleContactForm()">Close</button>
+        </div>
+        <div class="section">
+            <h2>Contact</h2>
+            <p><a href="https://discord.com/users/140635997439393803">Discord</a></p>
+            <p><a href="https://github.com/jesti789">Github</a></p>
+            <p><a href="https://www.linkedin.com/in/james-lopresti-20b548358/">LinkedIn</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 James Lopresti | All Rights Reserved</p>
+    </footer>
+    <script>
+        function toggleContactForm() 
+        {
+            const form = document.getElementById('contactForm');
+            form.classList.toggle('show-form');
+        }
+    </script>
+</body>
+</html>
