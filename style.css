@@ -70,6 +70,36 @@ nav a:hover::after
     display: flex;
     align-items: center;
 }
+.nav-toggle 
+{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+@media (max-width: 768px) 
+{
+    .nav-middle 
+    {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        width: 100%;
+        background: #48A6A7;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .nav-middle.show 
+    {
+        display: flex;
+    }
+    .nav-toggle 
+    {
+        display: block;
+    }
+}
 .profile-img 
 {
     display: block;

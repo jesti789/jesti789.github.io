@@ -13,11 +13,12 @@
         <p>Senior Computer Science Major at the University of Alabama in Huntsville</p>
     </header>
     <nav>
-        <ul class="nav-middle">
+        <ul class="nav-middle" id="navMenu">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a onclick="toggleContactForm()">Contact</a>
         </ul>
+        <div class="nav-toggle" onclick="toggleMenu()">☰</div>
         <ul class="nav-right">
             <a href="https://discord.com/users/140635997439393803"><i class="fa-brands fa-discord"></i></a>
             <a href="https://www.linkedin.com/in/james-lopresti-20b548358/"><i class="fa-brands fa-linkedin"></i></a>
@@ -51,12 +52,15 @@
     <footer>
         <p>&copy; 2025 James Lopresti | All Rights Reserved</p>
     </footer>
-
     <script>
         function toggleContactForm() 
         {
             const form = document.getElementById('contactForm');
             form.classList.toggle('show-form');
+        }
+        function toggleMenu() 
+        {
+            document.getElementById("navMenu").classList.toggle("show");
         }
     </script>
 </body>
