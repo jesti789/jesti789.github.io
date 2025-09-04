@@ -97,12 +97,14 @@
         <div class="contact-form" id="contactForm">
             <h2>Contact Me</h2>
             <form action="mailto:jameslopresti2@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required><br>
-                <input type="email" name="email" placeholder="Your Email" required><br>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
-                <button type="submit">Send</button>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             </form>
-            <button onclick="toggleContactForm()">Close</button>
+            <div class="form-buttons">
+                <button type="submit">Send</button>
+                <button onclick="toggleContactForm()">Close</button>
+            </div>
         </div>
         <div class="section">
             <h2>Contact</h2>
@@ -111,7 +113,6 @@
             <p><a href="https://www.linkedin.com/in/james-lopresti-20b548358/">LinkedIn</a></p>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2025 James Lopresti | All Rights Reserved</p>
     </footer>
