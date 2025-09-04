@@ -74,7 +74,7 @@ nav a:hover::after
 {
     display: block;
     margin: 1rem auto;
-    width: 400px;
+    width: 25rem;
     border-radius: 50%;
 }
 .image-container
