@@ -151,7 +151,37 @@ footer
 {
     bottom: 0;
 }
-/* Dont look at me
+.project-button-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.project-button 
+{
+    background-color: #2973B2;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.project-button:hover 
+{
+    background-color: #48A6A7;
+}
+.project-image 
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+/*
 .notes-button-container
 {
     display: flex;
