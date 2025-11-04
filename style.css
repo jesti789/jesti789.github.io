@@ -1,16 +1,16 @@
 body 
 {
-    font-family: Arial, sans-serif;
+    font-family: var(--bodyFont);
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(#F2EFE7,#2973B2);
+    background: var(--backgroundColor);
     color: black;
 }
 header 
 {
     font-size: 1.3rem;
-    background: #2973B2;
+    background: var(--primary);
     color: black;
     padding: 1rem 0;
     text-align: center;
@@ -20,7 +20,7 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #48A6A7;
+    background: var(--secondary);
     text-align: center;
     position: sticky;
     top: 0;
@@ -48,7 +48,7 @@ nav a::after
     left: 50%;
     width: 0;
     height: 3px;
-    background: #2973B2;
+    background: var(--primary);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -104,26 +104,21 @@ nav a:hover::after
         display: block;
     }
 }
-.profile-img 
+.profile-img
 {
     display: block;
     margin: 1rem auto;
     width: 25rem;
     border-radius: 50%;
+    border: 5px solid transparent;
+    transition: border 0.5s ease;
 }
-.image-container
+.profile-img:hover
 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    border: 5px solid var(--primary);
+    transition: border 0.5s ease;
 }
-.image-container img
-{
-    width: 100%;
-    max-width: 300px;
-    border-radius: 50%;
-}
+
 .container 
 {
     width: 80%;
@@ -132,7 +127,7 @@ nav a:hover::after
 }
 .section
 {
-    background: #9ACBD0;
+    background: var(--secondaryLight);
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -242,28 +237,3 @@ footer
     max-width: 100%;
     height: auto;
 }
-/*
-.notes-button-container
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-} I said stop looking
-.notes-button
-{
-    background-color: #2973B2;
-    color: black;
-    border-radius: 5px;
-    border-style: none;
-    font-size: 20px;
-    text-align: center;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-} Cant trust nobody these days
-.notes-button:hover
-{
-    background-color:#48A6A7;
-}
-*/
