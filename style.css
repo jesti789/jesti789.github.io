@@ -107,7 +107,7 @@ nav a:hover::after
 .profile-img
 {
     display: block;
-    margin: 1rem auto;
+    margin: 4rem auto;
     width: 25rem;
     border-radius: 50%;
     border: 5px solid transparent;
