@@ -11,13 +11,15 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer0.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>James Lopresti - Projects</title>
+    <title>James Lopresti | Projects</title>
 </head>
 <body>
     <header>
-        <h1>James Lopresti</h1>
+        <h1><strong>James Lopresti</strong></h1>
         <p>Senior Computer Science Major at the University of Alabama in Huntsville</p>
     </header>
     <nav>
@@ -57,8 +59,26 @@
             <button onclick="toggleContactForm()">Close</button>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2025 James Lopresti | All Rights Reserved</p>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-108">
+        <div class="cs-container">
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a href="index.html" class="cs-link">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a href="projects.html" class="cs-link">Projects</a>
+                </li>
+                <li class="cs-li">
+                    <a onclick="toggleContactForm()" class="cs-link">Contact</a>
+                </li>
+            </ul>
+            <span class="cs-copyright"><strong>&copy; 2025 James Lopresti | All Rights Reserved</strong></span>
+        </div>
     </footer>
     <script>
         function toggleContactForm() 

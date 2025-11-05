@@ -70,11 +70,6 @@
         justify-content: center;
         flex: none;
     }
-    #services-1666 .cs-title
-    {
-        /* 16px - 24px */
-        margin: 0 0 clamp(1rem, 1.96vw, 1.5rem) 0;
-    }
     #services-1666 .cs-text
     {
         /* 16px - 24px */
