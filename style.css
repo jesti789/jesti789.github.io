@@ -154,7 +154,7 @@ nav a:hover::after {
 }
 
 /* ---------- MOBILE NAV ---------- */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     nav {
         flex-wrap: wrap;
         justify-content: space-between;
