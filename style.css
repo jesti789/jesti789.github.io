@@ -1,68 +1,53 @@
-@media (max-width: 600px) {
-    nav {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 0.5rem 0;
-    }
-
-    .nav-right {
-        margin: 0.5rem auto 0 auto;
-    }
-
-    .nav-toggle {
-        margin-left: auto;
-    }
-
-    .nav-middle.show {
-        top: 2.8rem;
-        width: 90%;
-    }
-
-    .nav-right a i {
-        font-size: 1.3rem;
-    }
-}
-
 /* ===========================
    GLOBAL RESPONSIVE FIXES
    =========================== */
 
-@media (max-width: 768px) {
-    body {
-        font-size: 1rem;
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem)
+{
+    body
+    {
+        font-size: 1.2rem;
         padding: 0 1rem;
     }
 
-    header h1 {
-        font-size: 1.8rem;
+    header h1
+    {
+        font-size: 2.6rem;
     }
 
-    header p {
-        font-size: 1rem;
+    header p
+    {
+        font-size: 1.3rem;
     }
 
-    .profile-img {
+    .profile-img
+    {
         width: 70%;
         margin: 2rem auto 4rem auto;
     }
 
-    .container {
+    .container
+    {
         width: 95%;
         padding: 1rem 0;
     }
 
-    .section {
+    .section
+    {
         padding: 1rem;
     }
 
-    .cs-title {
+    .cs-title
+    {
         font-size: 1.5rem;
         text-align: center;
     }
 
-    .cs-text {
+    .cs-text
+    {
         text-align: justify;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -83,163 +68,6 @@ header
     padding: 1rem 0;
     text-align: center;
 }
-/* ---------- NAV BAR BASE ---------- */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--secondary);
-    text-align: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 3rem;
-    z-index: 9;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-/* Links */
-nav a {
-    color: black;
-    text-decoration: none;
-    margin: 1rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    position: relative;
-    padding: 0.5rem 1rem;
-    overflow: hidden;
-}
-
-nav a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 3px;
-    background: var(--primary);
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-/* Layout groups */
-.nav-middle {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin-right: 1rem;
-    margin-left: auto;
-}
-
-.nav-toggle {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 0 1rem;
-}
-
-/* ---------- MOBILE NAV ---------- */
-@media (max-width: 1023px) {
-    nav {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        height: auto;
-        padding: 0.5rem 1rem;
-    }
-
-    /* Hide links by default */
-    .nav-middle {
-        display: none;
-        flex-direction: column;
-        align-items: center;           /* center the links */
-        justify-content: center;
-        position: absolute;
-        top: 3rem;                     /* starts just below navbar */
-        left: 0;
-        width: 100%;                   /* full width */
-        background: var(--secondary);
-        padding: 2rem 0;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        border-radius: 0 0 8px 8px;
-        z-index: 10;
-    }
-
-    /* When toggled open */
-    .nav-middle.show {
-        display: flex;
-        animation: slideDown 0.3s ease forwards;
-    }
-
-    /* Center each link and give spacing */
-    .nav-middle a {
-        display: block;
-        width: auto;                   /* only as wide as text */
-        padding: 0.8rem 0;
-        margin: 0.3rem 0;
-        font-size: 1.1rem;
-        text-align: center;
-        border: none;
-    }
-
-    /* Show hamburger icon */
-    .nav-toggle {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-        color: black;
-        margin-left: auto;
-        z-index: 11; /* sits above dropdown */
-    }
-
-    /* Right-side icons stay visible above menu */
-    .nav-right {
-        gap: 1rem;
-        z-index: 11;
-    }
-
-    /* Nice downward animation */
-    @keyframes slideDown {
-        0% { opacity: 0; transform: translateY(-10px); }
-        100% { opacity: 1; transform: translateY(0); }
-    }
-}
-
-
-/* ---------- DESKTOP NAV ---------- */
-@media (min-width: 769px) {
-    .nav-toggle {
-        display: none; /* Hide burger on desktop */
-    }
-
-    .nav-middle {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center
-    }
-
-    .nav-middle a {
-        border: none;
-    }
-}
-
 
 .profile-img
 {
